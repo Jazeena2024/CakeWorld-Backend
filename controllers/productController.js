@@ -9,14 +9,16 @@ export const addProduct = async (req, res) => {
       name,
       price,
       description,
-      image
+      image,
+      video
     } = req.body;    
 
     const product = new Product({
       name,
       price,
       description,
-      image
+      image,
+      video
     });
 
     await product.save();
@@ -84,14 +86,16 @@ export const updateProduct = async (req, res) => {
       name,
       price,
       description,
-      image
+      image,
+      video
     } = req.body;
 
     const updatedData = {
       name,
       price,
       description,
-      image
+      image,
+      video
     };
 
     const updated =

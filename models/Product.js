@@ -7,6 +7,7 @@ const productSchema = new mongoose.Schema(
     price: Number,
     category: String,
     image: String,
+    video:String,
     description: String,
   },
   { timestamps: true }

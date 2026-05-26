@@ -26,7 +26,7 @@ router.post("/checkout", async (req, res) => {
           {
             price_data: {
 
-              currency: "inr",
+              currency: "usd",
 
               product_data: {
                 name: "Cake Order"

@@ -18,9 +18,9 @@ app.use("/uploads", express.static("uploads"));
 
 
 // DB connection
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("DB Connected"))
-  .catch((err) => console.log(err));
+  mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log("DB Connected"))
+    .catch((err) => console.log(err));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
